@@ -4,7 +4,8 @@
 
 String email = request.getParameter("email");
 String password = request.getParameter("password");
-
+// admin@mavi.com -> admin page for CRUD
+//admin123  -> Password
 PreparedStatement ps = con.prepareStatement(
 "SELECT * FROM admin WHERE email=? AND password=?");
 
